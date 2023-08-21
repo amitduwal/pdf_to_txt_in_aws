@@ -13,6 +13,7 @@ resource "aws_iam_policy" "pdf_txt_s3_policy" {
     })
 }
 
+
 resource "aws_iam_role" "pdf_txt_lambda_role" {
     name = "pdf_txt_lambda_role"
     assume_role_policy = jsonencode({
